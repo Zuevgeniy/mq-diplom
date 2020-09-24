@@ -101,8 +101,8 @@ h1 {
   .title {
     font-size: 28px;
     max-width: 400px;
-    padding-top: 134px;
-    padding-bottom: 90px;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 }
 
@@ -211,7 +211,7 @@ a {
 
 .main {
   font-family: 'Open Sans', Arial;
-  font-size: 24px;
+  //f/ont-size: 24px;
 }
 
 .players_game {
@@ -646,10 +646,13 @@ a {
 
 @media (max-width: 640px) {
   .popup_active, .popup_find, .popup_work {
-    padding: 33px 35px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 27px;
+    padding-right: 27px;
     position: absolute;
-    left: calc(20px + 66px/2);
-    top: calc(351px - 70px);
+    left: calc(20px + 6px/2);
+    top: calc(351px - 53px);
     background-color: #5e42b0;
 }
 
@@ -838,7 +841,7 @@ a {
 @media (max-width: 640px) {
   .footer {
       background-image: url("../images/game_767.jpg");
-      padding-top: 100px;
+      //p/adding-top: 100px;
       padding-bottom: 5px;
       padding-left: 20px;
       padding-right: 20px;
@@ -870,6 +873,7 @@ a {
 @media (min-width: 641px) and (max-width: 960px), (max-width: 640px) {
   .download {
     flex-direction: column;
+    margin-top: 10px;
   }
 }
 
@@ -898,6 +902,7 @@ a {
     margin-right: auto;
     width: 70px;
     height: 74px;
+    margin-top: 20px;
   }
 }
 
@@ -955,9 +960,9 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0;
-    line-height: 1.5;
+    line-height: 1;
     font-size: 32px;
-    padding-top: 55px;
+    padding-top: 5px;
     max-width: 280px;
 }
   .show {
@@ -996,12 +1001,10 @@ a {
     flex-direction: column;
     align-items: center;
     font-size: 8px;
-    padding-bottom: 80px;
-    padding-top: 75px;
+    //p/adding-bottom: 80px;
+    //p/adding-top: 75px;
   }
-  .logo {
-    padding-top: 0;
-}
+
 }
 
 
@@ -1013,5 +1016,5 @@ a {
 
 @media (min-width: 641px) and (max-width: 960px) {
   .logo {
-    padding-top: 0;
+    padding-top: 00;
 }
