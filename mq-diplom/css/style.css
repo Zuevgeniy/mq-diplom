@@ -1,0 +1,1020 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*{
+margin:0;
+padding:0;
+}
+
+.welcome {
+  color: #ffffff;
+  font-family: 'Open Sans', Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: url("../images/football_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position:relative;
+  height: 100Vh;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.welcome::after {
+  content: "";
+  height: 100%;
+  background-color: #0a0e34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+@media (min-width: 961px) {
+.logo {
+  width: 188px;
+  padding: 50px;
+  z-index: 1;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+.logo {
+  width: 203px;
+  padding-top: 40px;
+  z-index: 1;
+  }
+}
+
+@media (max-width: 640px) {
+.logo {
+  width: 133px;
+  padding-top: 30px;
+  z-index: 1;
+  }
+}
+
+.header-logo {
+ width: 100%;
+}
+
+h1 {
+  text-decoration: none;
+}
+
+.title {
+  z-index: 1;
+  width: 95%; / / было 95%//
+  ///p adding-top: 293px;//
+  //pa dding-bottom: 215px;
+  font-size: 90px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .title {
+    font-size: 64px;
+    padding-top: 178px;
+    padding-bottom: 308px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 28px;
+    max-width: 400px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.right_text {
+  float: right;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .right_text {
+    max-width: 478px;
+    margin-right: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .right_text {
+    max-width: 210px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-links {
+  width: 670px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 105px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .social-links {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .social-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    padding-bottom: 80px;
+  }
+}
+
+.app-store, .google {
+  width: 45%;
+  background-color: #5e42b0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .app-store, .google {
+    width: 96%;
+    max-width: 280px;
+  }
+  .app-store {
+    margin-bottom: 12px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 640px) {
+  .button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.app-store-logo, .google-logo {
+  width: 40px;
+  padding-right: 25px;
+}
+
+@media (max-width: 640px) {
+  .app-store-logo, .google-logo {
+    width: 20px;
+    padding-right: 8px;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.main {
+  font-family: 'Open Sans', Arial;
+  //f/ont-size: 24px;
+}
+
+.players_game {
+  position: relative;
+  overflow: hidden;
+}
+
+.footballer {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 566px;
+  height: 908px;
+
+  top: 30px;
+  right: 51%;
+  position: absolute;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .footballer {
+
+    background-repeat: no-repeat;
+    left: -20%;
+    top: 100px;
+    width: 497px;
+    height: 699px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footballer {
+
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    left: calc(50% - 281px/2);
+    width: 281px;
+    height: 192px;
+  }
+}
+
+.title_bg {
+  width: 100%;
+  background-color: #ffffff;
+  height: 25%;
+}
+
+.article_title {
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  padding-top: 114px;
+  padding-left: 50%;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .article_title {
+    padding-left: 40%;
+    padding-top: 85px;
+  }
+}
+
+@media (max-width: 640px) {
+  .article_title {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 326px;
+    font-size: 50px;
+  }
+}
+
+.connection_bg, .collaboration_bg, .growth_bg {
+  width: 100%;
+  background-color: #ffffff;
+  height: 33.33%;
+}
+
+.item_connection, .item_collaboration, .item_growth {
+  max-width: 714px;
+  padding-left: 50%;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  padding-right: 10px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .item_connection, .item_collaboration, .item_growth {
+    max-width: 432px;
+    padding-left: 40%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .item_connection, .item_collaboration, .item_growth {
+    padding: 60px 20px 55px 20px;
+  }
+}
+.athlets_number_white{
+
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: super;
+    padding-right: 10px;
+    position: relative;
+    color: black;
+  }
+
+  .athlets_number_white::after {
+      content: "";
+      width: 19px;
+      height: 5px;
+      background-color: #ffffff;
+      position: absolute;
+      display: block;
+      bottom: -5px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50px;
+  }
+
+
+
+
+
+.connection_title, .collaboration_title, .growth_title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  padding-bottom: 28px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .connection_title, .collaboration_title, .growth_title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .connection_title, .collaboration_title, .growth_title {
+    font-size: 23px;
+  }
+}
+
+.athlets_number {
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: super;
+  padding-right: 10px;
+  position: relative;
+  color: black;
+}
+
+.athlets_number::after {
+    content: "";
+    width: 19px;
+    height: 5px;
+    background-color: #5e42b0;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+@media (max-width: 640px) {
+  .athlets_number {
+    font-size: 14px;
+  }
+  .athlets_number::after {
+    width: 16px;
+  }
+}
+
+.slogan_text, .growth_content {
+  max-width: 755px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .slogan_text, .growth_content {
+    font-size: 16px;
+  }
+}
+
+  @media (max-width: 640px) {
+    .slogan_text, .growth_content {
+      font-size: 15px;
+      padding-right: 20px;
+    }
+  }
+
+.collaboration_bg {
+  background-color: #f6f4fa;
+}
+
+.growth_bg {
+  background-color: #5e42b0;
+}
+
+.article_athlets_number_growth{
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: super;
+  padding-right: 10px;
+  position: relative;
+  color: black;
+}
+
+
+
+  @media (max-width: 640px) {
+    .article_athlets_number_growth {
+      font-size: 14px;
+    }
+    .article_athlets_number_growth::after {
+      width: 16px;
+    }
+  }
+
+.growth_content {
+  color: #ffffff;
+}
+
+.article_title_players {
+  width: 50%;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  padding-left: 100px;
+  padding-top: 119px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .article_title_players {
+    padding-left: 30px;
+    padding-top: 90px;
+  }
+}
+
+  @media (max-width: 640px) {
+    .article_title_players {
+      width: 100%;
+      font-size: 50px;
+      padding-left: 20px;
+      padding-top: 25px;
+      padding-bottom: 266px;
+    }
+  }
+
+@media (min-width: 961px) {
+.basketballer_img {
+
+  background-repeat: no-repeat;
+  background-position:70%;
+  width: 991px;
+  height: 815px;
+  left: 50%;
+  top: 950px;
+  position: absolute;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .basketballer_img {
+
+    background-repeat: no-repeat;
+    background-position:100%;
+    height: 565px;
+    width: 690px;
+    right: -33%;
+    top: 900px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 640px) {
+  .basketballer_img {
+
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 248px;
+    left: calc(50% - 302px/2);
+    top: 1250px;
+    position: absolute;
+  }
+}
+  .connection_players, .collaboration_players, .growth_players {
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    padding-left: 100px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .connection_players, .collaboration_players, .growth_players {
+    width: 60%;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 30px;
+  }
+}
+
+  @media (max-width: 640px) {
+    .connection_players, .collaboration_players, .growth_players {
+      width: 100%;
+      font-size: 15px;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+  }
+
+.growth_bg_players {
+  width: 100%;
+  background-color: #0a0e34;
+  height: 33%;
+}
+
+.number_growth{
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: super;
+  padding-right: 10px;
+  position: relative;
+  color: #9173e6;
+}
+
+.number_growth::after {
+    content: "";
+    width: 19px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+    @media (max-width: 640px) {
+      .number_growth {
+        font-size: 14px;
+      }
+        .number_growth::after {
+          width: 16px;
+      }
+    }
+
+.be_active, .find_contact, .work_it {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.find_contact {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .be_active, .find_contact, .work_it {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .be_active, .find_contact, .work_it {
+    display: block;
+  }
+}
+
+.popup_active, .popup_find, .popup_work {
+
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  position: absolute;
+  top: 210px;
+  left: calc(50% - 145px/2);
+
+  background-color: #5e42b0;
+  vertical-align: middle;
+}
+
+.popup_number {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+
+  position: relative;
+}
+
+.popup_number::after {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #8b7ab6;
+  position: absolute;
+  display: block;
+  border-radius: 50px;
+
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .popup_active, .popup_find, .popup_work {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    left: 30px;
+    top: calc(584px - 110px + 32px);
+    background-color: #5e42b0;
+}
+
+.popup_number {
+
+  position: relative;
+}
+
+.popup_number::after {
+
+  }
+}
+
+@media (max-width: 640px) {
+  .popup_active, .popup_find, .popup_work {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 27px;
+    padding-right: 27px;
+    position: absolute;
+    left: calc(20px + 6px/2);
+    top: calc(351px - 53px);
+    background-color: #5e42b0;
+}
+
+.popup_number {
+
+  position: relative;
+  font-size: 14px;
+}
+
+.popup_number::after {
+
+  width: 16px;
+  }
+}
+
+.be_active_img {
+  width: 50%;
+  height: 728px;
+  background-image: url("../images/be-active_1024.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .be_active_img {
+    width: 100%;
+    height: 584px;
+    background-image: url("../images/be-active_960.jpg");
+  }
+}
+
+@media (max-width: 640px) {
+  .be_active_img {
+    width: 100%;
+    height: 351px;
+    background-image: url("../images/be-active_640.jpg");
+  }
+}
+
+.be_active_content, .find_contact_content, .work_it_content {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.be_active_content, .work_it_content {
+  padding-left: 125px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.find_contact_content {
+  padding-left: 100px;
+  padding-right: 130px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .be_active_content, .find_contact_content, .work_it_content {
+    width: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
+
+@media (max-width: 640px) {
+  .be_active_content, .find_contact_content, .work_it_content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 34px;
+    padding-bottom: 82px;
+  }
+}
+
+.be_active_title, .find_contact_title, .work_it_title {
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  padding-bottom: 120px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .be_active_title, .find_contact_title, .work_it_title {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .be_active_title, .find_contact_title, .work_it_title {
+    padding-bottom: 20px;
+    font-size: 28px;
+  }
+}
+
+.find_contact_img {
+  width: 50%;
+  height: 728px;
+  background-image: url("../images/find-contact_1024.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.work_it_img {
+  width: 50%;
+  height: 728px;
+  background-image: url("../images/work-it_1024.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .find_contact_img {
+    width: 100%;
+    height: 584px;
+    background-image: url("../images/find-contact_960.jpg");
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .work_it_img {
+    width: 100%;
+    height: 584px;
+    background-image: url("../images/work-it_960.jpg");
+  }
+}
+
+@media (max-width: 640px) {
+  .find_contact_img {
+    width: 100%;
+    height: 351px;
+    background-image: url("../images/find-contact_640.jpg");
+  }
+}
+
+@media (max-width: 640px) {
+  .work_it_img {
+    width: 100%;
+    height: 351px;
+    background-image: url("../images/work-it_640.jpg");
+  }
+}
+
+
+.footer {
+
+  color: #ffffff;
+
+  background-image: url("../images/game_1280.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position:relative;
+  height: 100Vh;
+
+  font-family: 'Open Sans', Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .footer {
+      background-image: url("../images/game_1280.jpg");
+      padding-top: 128px;
+      padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+      background-image: url("../images/game_767.jpg");
+      //p/adding-top: 100px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+  }
+}
+
+.footer::after {
+  content: "";
+  background-color: #0a0e34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+
+
+
+}
+
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 228px;
+}
+
+@media (min-width: 641px) and (max-width: 960px), (max-width: 640px) {
+  .download {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+.logo_nowords_bg {
+  width: 130px;
+  height: 135px;
+  background-color: #684ac0;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .logo_nowords_bg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo_nowords_bg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 74px;
+    margin-top: 20px;
+  }
+}
+
+.logo_nowords {
+  width: 100px;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .logo_nowords {
+    width: 55px;
+  }
+}
+
+.download_app {
+  font-size: 80px;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 1;
+  line-height: 40px;
+  padding-top: 30px;
+  padding-left: 15px;
+  max-width: 715px;
+}
+
+.show {
+  font-size: 30px;
+  font-weight: normal;
+  color: #a496ca;
+  z-index: 1;
+  padding-top: 20px;
+  padding-left: 4px;
+  max-width: 715px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .download_app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    text-align: center;
+    max-width: 705px;
+  }
+  .show {
+  font-size: 36px;
+  padding-top: 0;
+  font-weight: 400;
+  line-height: 0px;
+  max-width: 705px;
+  }
+}
+
+@media (max-width: 640px) {
+  .download_app {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+    line-height: 1;
+    font-size: 32px;
+    padding-top: 5px;
+    max-width: 280px;
+}
+  .show {
+  font-size: 14px;
+  padding-top: 0;
+  padding-bottom: 70px;
+  max-width: 280px;
+  line-height: 1;
+  }
+}
+
+.social-links-footer {
+  width: 670px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  //p adding-bottom: 250px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .social-links-footer {
+    padding-top: 286px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .social-links-footer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    //p/adding-bottom: 80px;
+    //p/adding-top: 75px;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+  .header-logo {
+    width: 132px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .logo {
+    padding-top: 00;
+}
